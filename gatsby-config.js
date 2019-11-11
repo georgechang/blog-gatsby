@@ -59,8 +59,9 @@ module.exports = {
         `,
         feeds: [{
           serialize: ({ query: { site, allMarkdownRemark } }) => (
-            allMarkdownRemark.edges.map((edge) => Object.assign({}, edge.node.frontmatter, {
-              description: edge.node.frontmatter.description,
+            allMarkdownRemark.edges.map((edge) => ({
+              ...edge.node.frontmatter,
+              description: edge.node.excerpt,
               date: edge.node.frontmatter.date,
               url: site.siteMetadata.site_url + edge.node.fields.slug,
               guid: site.siteMetadata.site_url + edge.node.fields.slug,
@@ -77,6 +78,7 @@ module.exports = {
                   edges {
                     node {
                       html
+                      excerpt
                       fields {
                         slug
                       }
@@ -100,6 +102,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
+        excerpt_separator: '<!-- end -->',
         plugins: [
           'gatsby-remark-relative-images',
           {
@@ -130,13 +133,6 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-netlify',
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/index.js`,
-      }
-    },
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {

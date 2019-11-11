@@ -29,18 +29,18 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Hi! I\'m George and I like code, cloud, and containers.',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '',
-      vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
-      line: '',
-      gitlab: '',
-      weibo: ''
+      // email: '',
+      // facebook: '#',
+      telegram: 'georgechang',
+      twitter: 'georgechang',
+      github: 'georgechang',
+      // rss: '',
+      // vkontakte: '',
+      linkedin: 'georgechang',
+      // instagram: '#',
+      // line: '',
+      // gitlab: '',
+      // weibo: ''
     }
   }
 };

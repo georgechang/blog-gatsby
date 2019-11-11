@@ -1,7 +1,7 @@
 ---
 title: "Using PKCS #12 (.pfx) Certificates with Solr"
 date: 2018-08-20
-description: 
+description:
 template: "post"
 draft: false
 category: "Sitecore"
@@ -36,16 +36,16 @@ Or if you're obtaining a certificate from a provider, it's just:
 The only thing that will be different in the solr.in.cmd configuration is that instead of
 
 `set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.jks`
-`set SOLR_SSL_KEY_STORE_TYPE=JKS`
-and
+`set SOLR_SSL_KEY_STORE_TYPE=JKS`  
+and  
 `set SOLR_SSL_TRUST_STORE_TYPE=JKS`
 `set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.jks`
 
 you would have
 
 `set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.pfx`
-`set SOLR_SSL_KEY_STORE_TYPE=PKCS12`
-and
+`set SOLR_SSL_KEY_STORE_TYPE=PKCS12`  
+and  
 `set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.pfx`
 `set SOLR_SSL_TRUST_STORE_TYPE=PKCS12`
 
@@ -54,6 +54,7 @@ Easy, right?
 ### Can someone just do this for me?
 
 You might be thinking,
+
 > George, this doesn't make my life any easier. I'm not seeing how this would make my life better. Why won't you make my life better?
 
 Well, how about I script out steps 1 and 2 above for you in PowerShell? You just have to go update your `solr.in.cmd` file and you're in business.
