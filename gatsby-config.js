@@ -107,7 +107,6 @@ module.exports = {
           {
             resolve: 'gatsby-remark-mermaid',
             options: {
-              }
             }
           },
           'gatsby-remark-relative-images',
