@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: '/',
   title: 'Sitecore + George',
   subtitle: 'Adventures in Code, Cloud, and Containers',
-  copyright: '© 2019 All rights reserved.',
+  copyright: '© 2020 All rights reserved.',
   disqusShortname: '',
   postsPerPage: 10,
   googleAnalyticsId: '',

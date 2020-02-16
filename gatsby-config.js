@@ -104,11 +104,7 @@ module.exports = {
       options: {
         excerpt_separator: '<!-- end -->',
         plugins: [
-          {
-            resolve: 'gatsby-remark-mermaid',
-            options: {
-            }
-          },
+          'gatsby-remark-mermaid',
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-katex',
