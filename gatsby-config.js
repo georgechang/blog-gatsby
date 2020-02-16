@@ -104,6 +104,12 @@ module.exports = {
       options: {
         excerpt_separator: '<!-- end -->',
         plugins: [
+          {
+            resolve: 'gatsby-remark-mermaid',
+            options: {
+              }
+            }
+          },
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-katex',
@@ -127,7 +133,7 @@ module.exports = {
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
-          'gatsby-remark-external-links'
+          'gatsby-remark-external-links',
         ]
       }
     },

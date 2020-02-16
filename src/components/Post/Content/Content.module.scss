@@ -37,7 +37,6 @@
         }
 
       }
-
     }
 
     & a {
@@ -53,9 +52,11 @@
     & img {
       max-width: 100%;
     }
-
   }
 
+  & code[class*="language-"] {
+    font-size: 0.8em;
+  }
 }
 
 @include breakpoint-md {
@@ -84,4 +85,8 @@
 
   }
 
+}
+
+:global .mermaid {
+  text-align: center;
 }
