@@ -26,7 +26,7 @@ module.exports = {
   ],
   author: {
     name: 'George Chang',
-    photo: '/photo.jpg',
+    photo: '/media/photo.jpg',
     bio: 'Hi! I\'m George and I like code, cloud, and containers.',
     contacts: {
       // email: '',
