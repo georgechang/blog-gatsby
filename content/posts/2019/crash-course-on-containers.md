@@ -20,10 +20,24 @@ Now imagine if you gave your friend one big file with all the dependencies alrea
 
 Containers only depend on the kernel of the OS, that is, the core chunk of the operating system that handles the low level instructions of the operating system. This is where stuff like hardware drivers and the like live. Your container OS does need to vaguely match your host OS (Windows is more particular about this) but otherwise it's pretty flexible.
 
-## How about an example?
-
 ## You haven't said anything about Docker yet.
 
-Docker has become synonymous with containers because Docker has made containers accessible and easy to use. While Docker holds the significant majority (like 80+%) of the container market, there are also other containerization technologies that do similar things such as CoreOS rkt and Mesos. It's a Kleenex/tissue situation.
+Docker has become synonymous with containers because Docker has made containers accessible and easy to use. While Docker holds the significant majority (like 80+%) of the container market, there are also other containerization technologies that do similar things such as CoreOS rkt, and Mesos. It's a Kleenex/tissue situation.
 
 ## Neat, so how do I get started?
+
+Docker provides a sample hello-world container that you can pull and run by executing the following command:
+
+```bash
+```
+
+If you want something more Microsoft and web, Microsoft also has an ASP.NET Core sample application that you can pull and run with the following command:
+
+```bash
+```
+
+Congratulations, you just ran your first container!
+
+## Wait, what just happened?
+
+The container you just ran is based on something called Windows Server Nano - a tiny (you might even say "nano") version of Windows Server that depends on the foundational components of Windows to run. This Windows Server Nano image has had ASP.NET Core added to it as well as a basic ASP.NET Core application installed on it. You could have pulled and ran this container image on a brand new computer with just Docker installed on it and it would work. All the dependencies it needs comes along for the ride. Cool, right?
