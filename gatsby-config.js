@@ -105,21 +105,21 @@ module.exports = {
         excerpt_separator: '<!-- end -->',
         plugins: [
           // 'gatsby-remark-mermaid',
-          'gatsby-remark-relative-images',
-          {
-            resolve: 'gatsby-remark-katex',
-            options: {
-              strict: 'ignore'
-            }
-          },
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 960,
-              withWebp: true,
-              ignoreFileExtensions: [],
-            }
-          },
+          // 'gatsby-remark-relative-images',
+          // {
+          //   resolve: 'gatsby-remark-katex',
+          //   options: {
+          //     strict: 'ignore'
+          //   }
+          // },
+          // {
+          //   resolve: 'gatsby-remark-images',
+          //   options: {
+          //     maxWidth: 960,
+          //     withWebp: true,
+          //     ignoreFileExtensions: [],
+          //   }
+          // },
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
@@ -199,6 +199,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-flow',
-    'gatsby-plugin-optimize-svgs',
+    // 'gatsby-plugin-optimize-svgs',
   ]
 };
