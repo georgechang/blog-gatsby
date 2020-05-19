@@ -83,7 +83,6 @@
     "jest-cli": "26.0.1",
     "lost": "8.3.1",
     "postcss-pxtorem": "5.1.1",
-    "puppeteer": "^2.1.1",
     "react-test-renderer": "16.13.1",
     "rimraf": "3.0.2",
     "stylelint": "13.5.0",
