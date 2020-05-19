@@ -4,7 +4,6 @@ import renderer from 'react-test-renderer';
 import { useStaticQuery, StaticQuery } from 'gatsby';
 import siteMetadata from '../../../jest/__fixtures__/site-metadata';
 import Layout from './Layout';
-import type { RenderCallback } from '../../types';
 
 describe('Layout', () => {
   const props = {
@@ -16,7 +15,7 @@ describe('Layout', () => {
 
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
-      ({ render }: RenderCallback) => (
+      ({ render }) => (
         render(props)
       ),
       useStaticQuery.mockReturnValue(props)
