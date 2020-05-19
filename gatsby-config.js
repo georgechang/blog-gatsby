@@ -195,6 +195,7 @@ module.exports = {
         postCssPlugins: [...postCssPlugins],
         cssLoaderOptions: {
           camelCase: false,
+          ignoreOrder: true
         }
       }
     },
